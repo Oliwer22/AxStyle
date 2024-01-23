@@ -1,0 +1,154 @@
+/* Root basic data */
+:root {
+    --basic-font-fam: Arial, Helvetica, sans-serif;
+    --smooth-transition-ms: 600ms;
+}  
+@media (prefers-color-scheme: dark) {
+    :root {
+        background-color: rgb(15, 18, 20);
+        color: rgb(254, 254, 246);
+    }
+    ::-webkit-scrollbar-track {
+        background: rgb(15, 15, 20);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgb(43, 43, 38);
+        transition: var(--smooth-transition-ms);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(43, 43, 38);
+        transition: var(--smooth-transition-ms);
+    }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+}
+/* Reset some default browser styles */
+html, body, h1, h2, p, a, ul, li, input, textarea {
+    margin: 0;
+    padding: 0;
+}
+/* Default Fonts */
+h1{
+    font-size: 2.2rem;
+    font-family: var(--basic-font-fam);
+}
+h2 {
+    font-size: 1.6rem;
+    font-family: var(--basic-font-fam);
+}
+p{
+    font-size: 1.2rem;
+    font-family: var(--basic-font-fam);
+}
+a{
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: var(--basic-font-fam);
+}
+/* Default button */
+button{
+    display: inline-block; 
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(15, 18, 20);
+    border: rgb(43, 43, 243) 2px solid;
+    color: rgb(43, 43, 243);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--smooth-transition-ms);
+}
+button:hover {
+    background-color: rgb(43, 43, 243);
+    color: rgb(244, 244, 244);
+    transition: var(--smooth-transition-ms);
+}
+.button-default {
+    display: inline-block; 
+    background-color: rgb(15, 18, 20);
+    border: rgb(43, 43, 243) 2px solid;
+    color: rgb(43, 43, 243);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--smooth-transition-ms);
+}
+/* Primary Button Style */
+.button-success {
+    background-color: rgb(15, 18, 20);
+    border: rgb(46, 204, 113) 2px solid;
+    color: rgb(46, 204, 113);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--smooth-transition-ms);
+}
+.button-success:hover {
+    background-color: rgb(46, 204, 113);
+    color: rgb(244, 244, 244);
+    transition: var(--smooth-transition-ms);
+}
+/* Secondary Button Style */
+.button-alert {
+    background-color: rgb(15, 18, 20);
+    border: rgb(231, 76, 60) 2px solid;
+    color: rgb(231, 76, 60);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--smooth-transition-ms);
+}
+.button-alert:hover {
+    background-color: rgb(231, 76, 60);
+    color: rgb(244, 244, 244);
+    transition: var(--smooth-transition-ms);
+}
+/* All Inputs */
+/* Text Input */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+textarea {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Select */
+select {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(43, 43, 243);
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color var(--smooth-transition-ms);
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(43, 43, 243);
+}
+
+input[type="checkbox"]:hover {
+    background-color: rgb(43, 43, 243);
+}
